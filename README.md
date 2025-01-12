@@ -5,8 +5,6 @@
   <img src="images/SmartSignPic4.png" alt="Screenshot" width="50%">
 </div>
 
-## Description
-
 The Smart Sign Language Glove is an innovative wearable device designed to bridge the communication gap for individuals who use sign language by translating gestures into spoken or text-based output. At its core, the ESP32 microcontroller acts as the central processing unit, facilitating real-time data acquisition from flex sensors and gyroscope/accelerometer modules. These inputs are analyzed and processed to accurately interpret sign language gestures and deliver the corresponding spoken or textual translation.
 This project was completed within a month, combining foundational principles with newly acquired skills. The key technical components include the implementation of machine learning algorithms (K-Nearest Neighbors), asynchronous HTTP communication protocols, optimized data structures, 3D modeling with AutoCAD, advanced data acquisition techniques, and embedded systems development.
 
