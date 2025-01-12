@@ -1,5 +1,6 @@
-# Smart Sign Language Glove Translator
+
 <div align="center">
+  <h1>Smart Sign Language Glove Translator</h1>
   <img src="images/SmartSignPic1.jpg" alt="Screenshot" width="30%">
   <img src="images/SmartSignPic4.png" alt="Screenshot" width="50%">
 </div>
@@ -25,7 +26,9 @@ This project was completed within a month, combining foundational principles wit
 The sensor data is stored in queues over a period of 3 seconds to capture the full range of motion for a phrase. Before running the KNN prediction model, the sensor readings are normalized to ensure consistency across variations in the user’s hand size, movements, and sensor value ranges. This normalization step ensures the system’s robustness and reliability. The processed data is then fed into a K-Nearest Neighbors (KNN) machine learning model for gesture classification.
 The KNN algorithm operates by comparing the feature vector of the current gesture to the stored training data, calculating the Euclidean distance between the new data point and all points in the training set. It then identifies the k nearest neighbors and assigns the gesture the most frequently occurring label among them. To ensure prediction accuracy, a confidence score is computed, and only predictions with a confidence score of 80% or higher are considered valid. The system supports both training and prediction modes and transmits recognized gestures to a connected web server via an API. This enables dynamic visualization, translation, or seamless integration with other applications, making it a practical and efficient real-time translation tool that bridges communication gaps for sign language users.
 
-
+<div align="center">
+  <img src="images/SmartSignPic6.png" alt="Screenshot" width="50%"> 
+</div>
 
 
 ## Webserver
@@ -33,8 +36,11 @@ The KNN algorithm operates by comparing the feature vector of the current gestur
 The web server for this project integrates two key components. The client-side code, written in JavaScript, runs in the browser to handle the 3D hand model. The server-side code on the ESP32 manages communication with the client. This setup allows for real-time interaction, where physical hand gestures are accurately represented through a dynamic 3D model rendered in the browser.
 ### Web Client (JavaScript):
 Three.js Setup: The code uses the Three.js library for 3D rendering, loading a GLTF model of a hand (hand.glb) and adjusting its properties, such as scale and material. It also handles lighting, texture loading, and animation of the hand's skeleton (bones).
-<img src="images/SmartSignPic5.png" alt="Screenshot" width="50%"> 
-<img src="images/SmartSignPic6.png" alt="Screenshot" width="50%"> 
+<div align="center">
+  <img src="images/SmartSignPic5.png" alt="Screenshot" width="50%"> 
+</div>
+
+
 ### EventSource: 
 EventSource is used for server-to-client communication, enabling the client to listen for server-sent events (SSE). When the ESP32 sends real-time data, such as sensor values (e.g., flex_sensor or prediction), the client listens for these updates and applies them to the 3D model. This process can involve modifying the position or rotation of the hand model's bones (such as the thumb or index finger) in real-time. SSE provides a simple, one-way communication from the server to the client, ideal for receiving continuous updates without needing to poll the server repeatedly
 
