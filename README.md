@@ -67,9 +67,11 @@ This setup allows for real-time interaction with 3D models on the web, where the
 <div align="center">
  <img src="images/SmartSignPic8.png" alt="Screenshot" width="50%"> 
 </div>
-The general schematic can be seen below to recreate the system (ESP32, 5 variable resistors/flex sensors, MPU6050, 5 1kΩ Resistors). We decided to solder our components directly on a PCB board (4cm x 6cm) for simplicity and ease of use; however, you may use a breadboard. You may also notice we used 3D-printed parts alongside velcro to attach the components to the glove. Depending on your preferences and available resources, this design can be realized using custom 3D-printed parts or alternative mounting solutions.
+
+The general schematic can be seen above to recreate the system (ESP32, 5 variable resistors/flex sensors, MPU6050, 5 1kΩ Resistors). We decided to solder our components directly on a PCB board (4cm x 6cm) for simplicity and ease of use; however, you may use a breadboard. You may also notice we used 3D-printed parts alongside velcro to attach the components to the glove. Depending on your preferences and available resources, this design can be realized using custom 3D-printed parts or alternative mounting solutions.
+
 <div align="center">
- <img src="images/SmartSignPic2.jpg" alt="Screenshot" width="40%" style="transform: rotate(90deg);"> 
+  <img src="images/SmartSignPic2.jpg" alt="Screenshot" width="40%" style="transform: rotate(90deg); display: block;">
 </div>
 
 
