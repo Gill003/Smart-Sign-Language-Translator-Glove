@@ -1,5 +1,5 @@
 # Smart Sign Language Glove Translator
-<img src="images/SmartSignPic1.jpg" alt="Screenshot" width="30%"> <img src="images/SmartSignPic4.png" alt="Screenshot" width="20%"> 
+<img src="images/SmartSignPic1.jpg" alt="Screenshot" width="30%"> <img src="images/SmartSignPic4.png" alt="Screenshot" width="50%"> 
 
 ## Description
 
