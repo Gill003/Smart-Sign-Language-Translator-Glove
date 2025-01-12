@@ -25,7 +25,8 @@ The sensor data is stored in queues over a period of 3 seconds to capture the fu
 The KNN algorithm operates by comparing the feature vector of the current gesture to the stored training data, calculating the Euclidean distance between the new data point and all points in the training set. It then identifies the k nearest neighbors and assigns the gesture the most frequently occurring label among them. To ensure prediction accuracy, a confidence score is computed, and only predictions with a confidence score of 80% or higher are considered valid. The system supports both training and prediction modes and transmits recognized gestures to a connected web server via an API. This enables dynamic visualization, translation, or seamless integration with other applications, making it a practical and efficient real-time translation tool that bridges communication gaps for sign language users.
 
 <div align="center">
-  <img src="images/SmartSignPic6.png" alt="Screenshot" width="40%"> <img src="images/SmartSignPic7.png" alt="Screenshot" width="40%"> 
+  <img src="images/SmartSignPic6.png" alt="Screenshot" width="40%"> 
+   <img src="images/SmartSignPic7.png" alt="Screenshot" width="60%">
 </div>
 
 
@@ -65,7 +66,7 @@ This setup allows for real-time interaction with 3D models on the web, where the
 ## Hardware
 The general schematic can be seen below to recreate the system (ESP32, 5 variable resistors/flex sensors, MPU6050, 5 1kΩ Resistors). We decided to solder our components directly on a PCB board (4cm x 6cm) for simplicity and ease of use; however, you may use a breadboard. You may also notice we used 3D-printed parts alongside velcro to attach the components to the glove. Depending on your preferences and available resources, this design can be realized using custom 3D-printed parts or alternative mounting solutions.
 <div align="center">
- <img src="images/SmartSignPic8.png" alt="Screenshot" width="50%"> <img src="images/SmartSignPic2.heic" alt="Screenshot" width="50%"> 
+ <img src="images/SmartSignPic8.png" alt="Screenshot" width="50%"> <img src="images/SmartSignPic2.jpg" alt="Screenshot" width="50%"> 
 </div>
 
 
