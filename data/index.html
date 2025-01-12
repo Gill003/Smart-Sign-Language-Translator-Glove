@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    <meta charset="UTF-8" />
+        
+    <link rel="stylesheet" href="/style.css" />
+        
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no"
+    />
+        
+    <meta name="theme-color" content="#6B6AB3" />
+        
+    <title>Hand Pose Simulator</title>
+      
+  </head>
+    
+  <body>
+            <!-- Banner Section -->
+            
+    <div class="top-banner">
+                <button id="reset" onclick="resetPosition(this)">
+        RESET POSITION
+      </button>
+                           <button id="predict" onclick="getPrediction(this)">
+        MAKE PREDICTION
+      </button>
+                
+      <h1 id="prediction">Prediction:</h1>
+                <button id="muteButton" onclick="muteChange(this)">Mute</button>
+            
+    </div>
+          
+    <div class="content">        <canvas class="webgl"></canvas>     </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.40/build/Tone.js"></script>
+        
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js",
+          "three/addons/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/controls/OrbitControls.js",
+          "three/addons/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/loaders/GLTFLoader.js",
+          "three/examples/jsm/effects/OutlineEffect.js": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/effects/OutlineEffect.js",
+          "tweakpane": "https://cdn.jsdelivr.net/npm/tweakpane@3.1.9/dist/tweakpane.min.js"
+        }
+      }
+    </script>
+        
+    <script type="module" src="/main.js"></script>
+      
+  </body>
+</html>

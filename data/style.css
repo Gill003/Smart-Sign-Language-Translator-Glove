@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+#prediction {
+    position: relative;  /* Position the <h1> element relative to the nearest positioned ancestor */
+/* Adjust as needed to position the <h1> */
+    z-index: 1000;  /* Ensure <h1> is in front of the canvas */
+}
+#muteButton {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green for Unmute */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000
+}
+
+/* Style for the muted state (when audio is muted) */
+#muteButton.muted {
+    background-color: #f44336; /* Red for Mute */
+}
+body {
+    background: #6B6AB3;
+}
+
+
+.webgl {
+    position: fixed;
+    top: 80px; /* Adjust this to match the banner height */
+    left: 0;
+    outline: none;
+}
+
+
+#pane {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+}
+
+
+button {
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 9999px;
+    transition: all .3s;
+    user-select: none;
+}
+
+button:hover {
+    background: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+  /* Apply styles to the banner */
+.top-banner {
+    background-color: #422c71; /* Change to your preferred color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add space for content below the banner */
+.content {
+    margin-top: 80px; /* Adjust to match the banner height */
+}
